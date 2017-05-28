@@ -3,7 +3,7 @@ const app = express()
 const os = require('os')
 
 app.get('/', function (req, res) {
-  res.send('Hello World Felipe!')
+  res.send('Hello World Angel!')
 })
 
 app.get('/machine-info', function(req, res) {

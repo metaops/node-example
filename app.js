@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express()
 const os = require('os')
+const path = require('path')
 
-app.get('/', function (req, res) {
-  res.send('Hello World Julian!')
-})
+app.use('/', express.static('public'))
 
 app.get('/machine-info', function(req, res) {
   res.send(os.networkInterfaces())
